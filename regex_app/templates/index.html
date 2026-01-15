@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regex Matcher</title>
+</head>
+<body>
+
+<h2>Regex Matcher</h2>
+
+<form method="POST">
+    <label>Test String:</label><br>
+    <textarea name="test_string" rows="5" cols="50"></textarea><br><br>
+
+    <label>Regular Expression:</label><br>
+    <input type="text" name="pattern"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+{% if error %}
+<p style="color:red;">Error: {{ error }}</p>
+{% endif %}
+
+{% if matches %}
+<h3>Matches:</h3>
+<ul>
+    {% for match in matches %}
+        <li>{{ match }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+</body>
+</html>
