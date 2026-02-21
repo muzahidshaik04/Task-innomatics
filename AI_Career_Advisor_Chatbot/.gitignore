@@ -1,0 +1,38 @@
+# ===============================
+# Environment & Secrets
+# ===============================
+.env
+.env.*
+*.env
+.streamlit/secrets.toml
+
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# AWS Keys
+*.pem
+*.key
